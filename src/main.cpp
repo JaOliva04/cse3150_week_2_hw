@@ -5,10 +5,11 @@ using std::cout;
 using std::cin;
 using std::endl;
 using std::string;
+using std::getline;
 int main() {
-	cout << "Please enter your name: ";
 	string name;
-	cin >> name;
+	cout << "Please enter your name: ";
+	getline(cin, name);
 	string str = GreetingUtils::create_message(name);
 	char* C_str = GreetingUtils::format_as_c_string(str);
 	for (int i = 0; i < str.size() + 1; ++i) {
