@@ -3,7 +3,7 @@
 
 namespace GreetingUtils {
 	std::string create_message(const std::string& name) {
-		std::string msg = "Hello " + name;
+		std::string msg = "Hello, " + name + "!";
 		return msg;
 	}
 
